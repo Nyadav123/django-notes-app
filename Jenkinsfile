@@ -9,7 +9,6 @@ pipeline {
         }
         stage("Build") {
             steps {
-                sh "sudo usermod -aG docker jenkins"
                 echo "Build the code"
                 sh "docker build -t my-notes-app ."
                 echo "List Docker images"
