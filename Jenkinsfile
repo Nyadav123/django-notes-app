@@ -10,7 +10,7 @@ pipeline {
         stage("Build") {
             steps {
                 echo "Build the code"
-                sh "docker build -t my-notes-app ."
+                sh "docker build -t my-notes ."
                 echo "List Docker images"
                 sh "docker images"
             }
